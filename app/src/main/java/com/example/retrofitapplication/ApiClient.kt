@@ -1,5 +1,6 @@
 package com.example.retrofitapplication
 
+import ApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

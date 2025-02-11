@@ -1,9 +1,10 @@
-package com.example.retrofitapplication
-
-import android.telecom.Call
+import com.example.retrofitapplication.Joke
+import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiService {
     @GET("jokes/random/10")
-    suspend fun getRandomJokes(): List<Joke>
+    fun getRandomJokes(): Call<List<Joke>>
+
+
 }
